@@ -1,17 +1,21 @@
 {
+  "homepage": "https://irgatbey.github.io/irgithub",
   "name": "irgit-hub",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "build": "esbuild src/main.ts src/read-later.ts --bundle --outdir=public --sourcemap",
-    "start": "npm run build && live-server public --browser=chrome"
+    "start": "npm run build && live-server public --browser=chrome",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d public"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "esbuild": "^0.25.10",
+    "gh-pages": "^6.3.0",
     "live-server": "^1.2.2",
     "typescript": "^5.9.2"
   }
