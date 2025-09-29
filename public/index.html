@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+    <title>İrgit's Hub</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="manifest" href="manifest.json" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+  <body>
+    <main class="hub-container">
+      <header class="hub-header">
+        <h1>İrgit's Hub</h1>
+        <div class="header-actions">
+          <div id="install-container"></div>
+          <button id="theme-toggle" class="pressable icon-button">
+            <span class="material-symbols-outlined">light_mode</span>
+          </button>
+        </div>
+      </header>
+      <div class="bento-grid">
+        <a href="#" id="read-later-app" class="bento-box large-box pressable">
+          <div class="box-content">
+            <span class="material-symbols-outlined icon">bookmark</span>
+            <h2>Daha Sonra Oku Sistemi</h2>
+          </div>
+          <div class="box-footer">
+            <span>Uygulamaya Git</span>
+            <span class="material-symbols-outlined">arrow_forward</span>
+          </div>
+        </a>
+        <div class="bento-box small-box disabled">
+          <div class="box-content">
+            <span class="material-symbols-outlined icon">list_alt</span>
+            <h2>Alışveriş Listesi</h2>
+          </div>
+          <div class="box-footer">
+            <span>(Yakında)</span>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>

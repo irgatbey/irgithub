@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+    <title>Daha Sonra Oku Sistemi - İrgit's Hub</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="manifest" href="manifest.json" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+  <body>
+    <main class="container">
+      <header class="page-header">
+        <a href="index.html" class="back-link pressable icon-button">
+          <span class="material-symbols-outlined">arrow_back</span>
+        </a>
+        <h1>Daha Sonra Oku Sistemi</h1>
+        <button id="theme-toggle" class="pressable icon-button">
+          <span class="material-symbols-outlined">light_mode</span>
+        </button>
+      </header>
+
+      <form id="add-article-form" class="add-form">
+        <input
+          type="url"
+          id="url-input"
+          placeholder="https://ornek.com/makale"
+          required
+        />
+        <button type="submit" class="pressable">
+          <span class="material-symbols-outlined">save</span>
+        </button>
+      </form>
+
+      <ul id="article-list" class="article-list"></ul>
+    </main>
+
+    <script type="module" src="read-later.js"></script>
+  </body>
+</html>
