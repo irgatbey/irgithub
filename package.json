@@ -5,8 +5,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "esbuild src/main.ts src/read-later.ts --bundle --outdir=public --sourcemap",
-    "start": "npm run build && live-server public --browser=chrome",
+    "build": "esbuild src/main.ts src/read-later.ts --bundle --outdir=docs --sourcemap",
+    "start": "npm run build && live-server docs --browser=chrome",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d public"
   },
